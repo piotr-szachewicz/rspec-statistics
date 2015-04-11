@@ -5,7 +5,7 @@ require 'rspec/statistics/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rspec-statistics"
-  spec.version       = Rspec::Statistics::VERSION
+  spec.version       = RSpec::Statistics::VERSION
   spec.authors       = ["Piotr Szachewicz"]
   spec.email         = ["piotr.szachewicz@gmail.com"]
 

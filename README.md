@@ -1,4 +1,4 @@
-# Rspec::Statistics
+# RSpec::Statistics
 
 This Ruby gem gathers statistics about your RSpec tests.
 

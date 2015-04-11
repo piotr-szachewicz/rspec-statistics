@@ -1,6 +1,6 @@
 require 'rspec/statistics/example'
 
-module Rspec
+module RSpec
   module Statistics
 
     # Listener that is connected to the RSpec events.
