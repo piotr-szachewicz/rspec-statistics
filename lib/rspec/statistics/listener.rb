@@ -6,8 +6,10 @@ module RSpec
     # Listener that is connected to the RSpec events.
     class Listener
       def start(notification)
-        start_counting_queries
-        start_counting_requests
+        if uses_rails?
+          start_counting_queries
+          start_counting_requests
+        end
       end
 
       def fields
@@ -41,6 +43,10 @@ module RSpec
         ActiveSupport::Notifications.subscribe("process_action.action_controller") do |name, start, finish, id, request|
           @current_example.try(:log_request, request, start, finish)
         end
+      end
+
+      def uses_rails?
+        Gem::Specification.find_all_by_name('rails').any?
       end
     end
 
