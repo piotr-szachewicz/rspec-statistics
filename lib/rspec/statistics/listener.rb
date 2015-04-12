@@ -1,4 +1,5 @@
 require 'rspec/statistics/example'
+require 'csv'
 
 module RSpec
   module Statistics
