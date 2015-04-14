@@ -7,6 +7,9 @@ For each example it records the following data:
  * how many database queries were made and how much time they took,
  * how many request were made and how much time did they take.
 
+This gem uses code from the [Profiling Your RSpec
+Suite excellent article](http://www.foraker.com/profiling-your-rspec-suite/) by Ben Eddy.
+
 ## Installation
 
 Add this line to your application's Gemfile:
