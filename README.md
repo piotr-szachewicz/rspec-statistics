@@ -1,4 +1,4 @@
-# RSpec::Statistics
+# RSpec::Statistics [![Build Status](https://travis-ci.org/piotr-szachewicz/rspec-statistics.svg?branch=master)](https://travis-ci.org/piotr-szachewicz/rspec-statistics)
 
 This Ruby gem gathers statistics about your RSpec tests.
 
