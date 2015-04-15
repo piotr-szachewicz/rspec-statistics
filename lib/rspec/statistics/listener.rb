@@ -8,6 +8,7 @@ module RSpec
     class Listener
       def start(notification)
         if uses_rails?
+          require 'rails'
           start_counting_queries
           start_counting_requests
         end
